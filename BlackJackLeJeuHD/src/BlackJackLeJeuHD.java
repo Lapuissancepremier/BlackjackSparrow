@@ -3,7 +3,6 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
-import java.awt.GraphicsEnvironment;
 
 public class BlackJackLeJeuHD {
     private class Carte{
@@ -52,7 +51,9 @@ public class BlackJackLeJeuHD {
     int fenLarg = 600;
     int fenHaut = 800;
     
-    //JFrame fene = new JFrame("BlackJack Le Jeu HD");
+    JFrame fene = new JFrame("BlackJack Le Jeu HD");
+    JPanel gamePanel = new JPanel();
+
     
 
 
@@ -60,11 +61,15 @@ public class BlackJackLeJeuHD {
         startGame();
 
         //fenêtre
-    /*  fene.setVisible(true);
+        fene.setVisible(true);
         fene.setSize(fenLarg, fenHaut);
         fene.setLocationRelativeTo(null);
         fene.setResizable(false);
-        fene.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
+        fene.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        gamePanel.setLayout(new BorderLayout());
+        gamePanel.setBackground(new Color(53, 101,77));
+        
         
     
     System.out.println("execution...");
